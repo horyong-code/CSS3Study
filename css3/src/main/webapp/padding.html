@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+<title>Insert title here</title>
+<link href="padding.css" rel="stylesheet">
+<link href="style.css" rel="stylesheet">
+</head>
+<body>
+	<h1>padding</h1>
+	<p id="p01">border를 기준으로 요소 내부의 양 사방 여백</p>
+	
+	<h2>1. padding의 각 방향별 지정 속성</h2>
+	<ul id="pdr">
+		<li class="pt">padding-top: n; 위쪽에 n만큼 지정</li>
+		<li class="pr">padding-right: n; 오른쪽에 n만큼 지정</liclass="pt">
+		<li class="pb">padding-bottom: n; 아랫쪽에 n만큼 지정</li>
+		<li class="pl">padding-left: n; 왼쪽에 n만큼 지정</li>
+	</ul>
+	<h2>2. padding의 값 갯수별 지정법</h2>
+	<ul id="pdn">
+		<li class="pn4">padding: n n n n; 상 우 하 좌 순서로 각각</li>
+		<li class="pn3">padding: n n n; 상, 좌우동일, 하 순서</li>
+		<li class="pn2">padding: n n; 상하, 좌우 서로 동일</li>
+		<li class="pn1">padding: n; 전부 동일</li>
+	</ul>
+	
+	<form action="test.jsp">
+		<label><span id="n1">name</span> <input type="text" name="name" id="tt"></label>
+		<labe><span id="i1">id</span> <input type="text" name="id" id="tt2"></label>
+		<input type="submit" value="전송하기" class="btn">
+	</form><br>
+	
+	<p id="ph">
+	<img src="img/jpg/puppy_1.jpg" alt="puppy" class="ph01">
+	<img src="img/jpg/puppy_2.jpg" alt="puppy" class="ph02">
+	<img src="img/jpg/puppy_3.jpg" alt="puppy" class="ph03">
+	</p>
+</body>
+</html>

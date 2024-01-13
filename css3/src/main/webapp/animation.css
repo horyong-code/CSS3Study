@@ -1,0 +1,139 @@
+@charset "UTF-8";
+
+.pre {white-space: pre;}
+
+
+@keyframes circle {
+	0% {background-color:#f50;
+	   transform:scale(1);
+	   border-radius:0;  }	   
+	   
+  100% {background-color:#05f;
+	   transform:scale(2);
+	   border-radius:50%;  }	
+}
+
+#sec01>div {background-color:#f50;
+width: 100px; height: 100px;
+text-align: center;
+line-height:100px; 
+display:inline-block; 
+margin:100px;
+animation:circle 4s;}
+
+.an02 {animation-iteration-count:4 !important;}
+.an03 {animation-direction:reverse !important;}
+.an04 {animation-iteration-count:4 !important;
+ animation-direction:alternate !important;}
+ 
+ 
+ @keyframes move {
+	 0% {
+		 left: 0;
+		 top: 0;
+	 }
+	 
+	 50% {
+		 left: 500px;
+		 top: 150px;
+		 transform: rotate(0deg);
+	 }
+	 
+	 70% {
+		 transform: rotate(720deg);
+	 }
+	 
+	 100% {
+		 left: 1000px;
+		 top: 0;
+		 transform: rotate(180deg);
+	 }
+ }
+ 
+ @keyframes bgimg {
+	 0% {background-image: url("img/jpg/puppy_5.jpg");}
+	 33% {background-image: url("img/jpg/puppy_3.jpg");}
+	 66% {background-image: url("img/jpg/puppy_4.jpg");}
+	 100% {background-image: url("img/jpg/puppy_6.jpg");}
+	 
+ }
+ 
+ .ani-bg {
+	 animation-name: bgimg;
+	 animation-duration: 20s;
+	 animation-iteration-count: infinite;
+ }
+ 
+/*  .ani-bg:hover{*/
+/*	  animation-play-state: paused;*/
+/*  }*/
+ 
+ #sec02>div {
+	 position: relative;
+	 background-color: #05f;
+	 width: 100px;
+	 height: 40px;
+	 animation-name: move;
+	 animation-duration: 4s;
+	 animation-iteration-count: infinite;
+ }
+ 
+ #sec02 {
+	 height: 500px;
+	 background-image: url("img/jpg/puppy_2.jpg");
+	 background-size: cover;
+	 background-position: 50% 50%;
+ }
+
+ .ani01 {
+	 animation-delay: 1s;
+ }
+ .ani02 {
+	 animation-delay: 1.5s;
+	 animation-direction: reverse;
+ }
+ .ani03 {
+	 animation-delay: 2s;
+	 animation-direction: alternate-reverse;
+ }
+ .ani04 {
+	 animation-delay: 2.5s;
+ }
+ 
+ #btn { /* checkbox/radio로 만드는 버튼 */
+	 display: none;
+ /* 1.체크박스나 라디오버튼은 숨김 */}
+ 
+ .la-btn {/* 2.레이블이 체크박스나 라디오버튼의
+기능을 대신하면서 버튼처럼 보이게 꾸밈*/
+	border:4px solid; 
+	background-color: #ccc;
+	padding: 10px 50px;
+	border-radius: 6px;
+	text-transform: capitalize;
+	font-weight:bold;
+	color: #333;
+	display: inline-block;
+ 	transform:translate(50px,550px);
+ }
+ 
+ .la-btn:hover{/* 3.레이블 버튼의 변화 */
+	 background-color: #333;
+	 color: #ccc;
+	 text-shadow: 0 0 4px #c3d; 
+ }
+ 
+ #btn:checked+.la-btn {
+ /* 3-1.버튼변화를 고정하고 싶을때
+ (숨겨진 체크박스나 라디오버튼이 체크되었을때
+ 레이블 버튼의 변화 지정) */	
+	 background-color: #333;
+	 color: #ccc;
+	 margin: 1px 0 0 1px;
+ }
+ 
+ #btn:checked~#sec02>div {
+	 animation-play-state: paused;
+ }
+ 
+ 

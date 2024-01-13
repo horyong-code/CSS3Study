@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+<title>margin</title>
+<link href="style.css" rel="stylesheet">
+<link href="margin.css" rel="stylesheet">
+</head>
+<body>
+	<h1>margin</h1>
+	<p id="mg">border를 기준으로 요소 외부의 양사방 여백</p>
+	<h2>1. margin의 각 방향별 지정 속성</h2>
+	<ul id="mdr">
+		<li class="mt">margin-:top; 위쪽에만 n만큼 지정</li>
+		<li class="mr">margin-:right; 오른쪽에만 n만큼 지정</li>
+		<li class="mb">margin-:bottom; 아래쪽에만 n만큼 지정</li>
+		<li class="ml">margin-:left; 왼쪽에만 n만큼 지정</li>
+	</ul>
+
+
+	<h2>2. margin의 값 개수별 지정법</h2>
+	<ul id="mgn">
+		<li class="mgn01">margin:n; 양사방 n으로 동일</li>
+		<li class="mgn02">margin:n n; 상하 좌우 순서로 각각 지정</li>
+		<li class="mgn03">margin:n n n; 상 좌우동일 하 순서로 각각 지정</li>
+		<li class="mgn04">margin:n n n n; 상 우 좌 하 순서로 각각 지정</li>
+	</ul>
+	
+	<form action="test.jsp">
+		<p>
+			block요소는 인접요소끼리의 상하 margin은 큰 값이 적용됨<br>
+			inline요소는 상하 margin 적용 안됨.<br>
+			인접요소끼리의 좌우 margin은 서로 더하기됨.<br>
+			* block 요소를 항상 정중앙에 배치할 때는<br>
+			  margin: n auto; 적용 (auto = 좌우 margin이 항상 같음)
+		</p>
+		<div id="itw">
+			<b class="it">itwill</b><span class="bs">busan</span>
+		</div>
+		<div id="inbox">
+		<label for="nm">name</label>
+		<input type="text" name="name" id="nm">
+		<label for="id">id</label>
+		<input type="text" name="id" id="id"><br>
+		<!-- space = enter : 딱 1번만 동작 -->
+		<input type="submit" id="btn">
+		</div>
+	</form>
+
+</body>
+</html>

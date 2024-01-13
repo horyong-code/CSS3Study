@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+<title>box-model</title>
+<link href="style.css" rel="stylesheet">
+<link href="box.css" rel="stylesheet">
+</head>
+<body>
+	<h1>box-model</h1>
+	<ul>
+		<li>block 요소 - 자동으로 줄이 바뀜 (한 줄에 나란히 올 수 없음)<br>
+			항상 가로 100% 크기<br>
+		</li><br>
+		<li>inline 요소 - 한 줄에 나란히 옴<br>
+		    크기 적용 불가. 상하 margin 적용 안 됨
+		</li>
+	</ul>
+
+<section id="sec01">
+	<h2>1. block 요소</h2>
+	<div>div tag</div>
+	<p>p tag</p>
+	
+	<b>* box-sizing: border-box;</b><br>
+	border나 padding이 요소의 크기 계산에 포함되므로
+	레이아웃에 변화가 없음
+</section>
+
+<section id="sec02">
+	<h2>2. inline 요소</h2>
+	<span>span tag</span>
+	<b>b tag</b>
+</section>
+
+</body>
+</html>

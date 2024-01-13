@@ -1,0 +1,125 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+<title>Insert title here</title>
+<link href="style.css" rel="stylesheet">
+<link href="transform.css" rel="stylesheet">
+</head>
+<body>
+	<h1>transform - 변형</h1>
+	<h1>transform 변형 함수들</h1>
+	<ul>
+		<li>transfrom: translate(); - 위치 변형</li>	
+		<li>transfrom: scale(); - 크기 변형</li>	
+		<li>transfrom: rotate(); - 회전 변형</li>	
+		<li>transfrom: skew(); - 기울기 변형</li>		
+	</ul>
+	
+	<h2>transform-origin: ; 변형</h2>
+	<ul>
+		<li>left / center / right - top / center / bottom</li>
+		<li>Xn Yn (n은 음수 가능. px, %, em ...)</li>		
+	</ul>
+
+<section id="sec01">
+	<h2>1. transform: translate(); - 위치 변형</h2>
+	<p class="tr01">transform: translateX(1000px);</p>
+	<p class="tr02">transform: translateX(-500px);</p>
+	<p class="tr03">transform: translateY(-250px);</p>
+	<p class="tr04">transform: translateY(250px);</p>
+	<p class="tr05">transform: translate(1000px, 200px);</p>
+	<p class="tr06">transform: translate(100%, 100%);</p>
+
+<div class="cnt">
+	[center] <br>
+	1. position: absolute; <br>
+	   left: 50%; top: 50%; <br>
+	2. transform: translate(-50%, -50%);
+</div>
+</section>
+
+<section id="sec02">
+	<h2>2. transform: scale(); - 크기 변형</h2>
+	
+	<p class="sc01">transform: scaleX(0.3);<br>
+		<img alt="sc01" src="img/tea.jpg">
+	</p>
+	<p class="sc02">transform: scaleX(1.5);<br>
+		<img alt="sc02" src="img/tea.jpg">
+	</p>
+	<p class="sc03">transform: scaleY(0.3);<br>
+		<img alt="sc03" src="img/tea.jpg">
+	</p>
+	<p class="sc04">transform-origin: left bottom;<br>
+		<img alt="sc04" src="img/tea.jpg">
+	</p>
+	<p class="sc04-1">transform: scaleY(2);<br>
+		<img alt="sc04-1" src="img/tea.jpg">
+	</p>
+	<p class="sc05">transform: scale(0.5, 0.5);<br>
+		<img alt="sc05" src="img/tea.jpg">
+	</p>
+	<p class="sc06">transform: scale(1.3, 1.3);<br>
+		<img alt="sc06" src="img/tea.jpg">
+	</p>
+</section>
+
+<section id="sec03">
+	<h2>3. transform: rotate(); - 회전 변형 (n은 음수 가능)</h2>
+	
+	<p class="ro01">transform: rotateX(80deg);<br>
+		<img alt="ro01" src="img/tea.jpg">
+	</p>
+	<p class="ro02">transform: rotateY(80deg);<br>
+		<img alt="ro02" src="img/tea.jpg">
+	</p>
+	<p class="ro03">transform: rotateX(180deg);<br>
+		<img alt="ro03" src="img/tea.jpg">
+	</p>
+	<p class="ro04">transform: rotateY(180deg);<br>
+		<img alt="ro04" src="img/tea.jpg">
+	</p>
+	<p class="ro04-1">transform-orgin: 100% 0;<br>
+		<img alt="ro04-1" src="img/tea.jpg">
+	</p>
+	<p class="ro05">transform: rotate(-360deg);<br>
+		<img alt="ro05" src="img/tea.jpg">
+	</p>
+	<p class="ro05-1">transform-origin: 0 0;<br>
+		<img alt="ro05-1" src="img/tea.jpg">
+	</p>
+	<p class="ro05-2">transform-origin: 1000px -200px;<br>
+		<img alt="ro05-2" src="img/tea.jpg">
+	</p>
+	<p class="ro06">transform: rotate(1080deg);<br>
+		<img alt="ro06" src="img/tea.jpg">
+	</p>
+</section>
+
+<section id="sec04">
+	<h2>4. transform: skew(ndeg); - 기울기 변형 (n은 음수 가능)</h2>
+	
+	<p class="sk01">transform: skewX(30deg);<br>
+		<img alt="sk01" src="img/tea.jpg">
+	</p>
+	<p class="sk02">transform: skewX(-30deg);<br>
+		<img alt="sk02" src="img/tea.jpg">
+	</p>
+	<p class="sk03">transform: skewY(30deg);<br>
+		<img alt="sk03" src="img/tea.jpg">
+	</p>
+	<p class="sk04">transform: skewY(-30deg);<br>
+		<img alt="sk04" src="img/tea.jpg">
+	</p>
+	<p class="sk05">transform: skew(30deg, 30deg);<br>
+		<img alt="sk05" src="img/tea.jpg">
+	</p>
+	<p class="sk06">transform: skew(30deg, 30deg);<br>
+		<img alt="sk06" src="img/tea.jpg">
+	</p>
+</section>
+
+
+</body>
+</html>

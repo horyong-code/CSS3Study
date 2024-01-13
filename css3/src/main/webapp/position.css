@@ -1,0 +1,198 @@
+@charset "UTF-8";
+
+html {
+scroll-behavior: smooth;
+}
+
+h2>i {
+font-style: normal;
+font-size: 14px
+}
+
+/* 1. position: static; (기본) */
+#sec01 > div {
+border: 1px solid red;
+width: 200px;
+position: static;
+left: 500px;
+}
+
+/* 2. position: relative; */
+/* 현재 위치 기준 */
+#sec02 > div {
+border: 1px solid #00d;
+width: 200px;
+}
+
+.re01 {
+position: relative;
+left: 500px;
+}
+
+.re02 {
+position: relative;
+right: 500px;
+}
+
+.re03 {
+position: relative;
+top: 500px;
+}
+
+.re04 {
+position: relative;
+bottom: 500px;
+}
+
+.re05 {
+position: relative;
+left: 900px;
+bottom: 300px;
+}
+
+.re06 {
+position: relative;
+right: 500px;
+top: 300px;	
+}
+
+#sec02:hover>div {
+position: static;
+}
+
+
+/* 3. position: absolute; */
+/* 부모 기준 */
+#sec03{
+height: 500px;
+position: relative;
+}
+
+#sec03 > div {
+border: 1px solid #0d0;
+width: 200px;
+}
+
+.ab01 {
+position: absolute;
+left: 500px;
+}
+
+.ab02 {
+position: absolute;
+right: 500px;
+}
+
+.ab03 {
+position: absolute;
+top: 300px;
+}
+
+.ab04 {
+position: absolute;
+bottom: 30px;
+}
+
+#sec03>aside {
+background-color: black;
+height: 400px;
+margin: 100px 0 0 300px;
+position: relative;
+}
+
+#sec03>aside>div {
+width: 100px;
+height: 120px;	
+padding: 10px;
+border-radius: 5px;
+text-transform: capitalize;
+position: absolute;
+box-sizing: border-box;
+box-shadow: 1px 1px 5px #333;
+}
+
+.cd01 {
+background-color: #aef;
+top: 50px;
+left: 50px;
+z-index: 50;
+}
+
+.cd02 {
+background-color: #fae;
+top: 50px;
+left: 100px;
+z-index: 49;
+}
+
+.cd03 {
+background-color: #eaf;
+top: 50px;
+left: 150px;
+z-index: 48;
+}
+
+.cd04 {
+background-color: #afe;
+top: 50px;
+left: 200px;
+z-index: 47;
+}
+
+#sec03>aside:hover>.cd02 {
+top: 100px;
+left: 150px;
+transition: 1s;
+}
+
+#sec03>aside:hover>.cd03 {
+left: 250px;
+transition: 1s;
+}
+
+#sec03>aside:hover>.cd04 {
+top: 100px;
+left: 250px;
+transition: 1s;
+}
+
+#sec03>aside>p {
+color: #fff;	
+position: absolute;
+right: 1em;
+bottom: 1em;
+}
+
+
+/* 4. position: fixed; */
+/* 브라우저 기준 */
+#sec04 {
+border-left: 14px solid #a36;	
+padding-left: 5px;
+width: 180px;
+position: fixed;
+right: -140px;
+bottom: 20px;
+background-color: white;
+box-sizing: border-box;
+background-color: #fff;
+}
+
+#sec04:hover{
+right: 20px;
+}
+
+#sec04 ul {
+list-style: none;
+padding-left: 0;
+}
+
+/* 5. position: sticky; */
+
+#sec05 {
+position: sticky;
+top: 50px;
+background-color: rgba(0,0,0,0.8);
+z-index: 99999;
+color: #fff;
+}

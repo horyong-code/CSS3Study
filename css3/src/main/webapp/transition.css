@@ -1,0 +1,59 @@
+@charset "UTF-8";
+
+.tr {
+	background-color: #ce0;
+	width: 200px;
+	height: 60px;
+}
+
+.tr:hover {
+	background-color: #e00;
+	width: 600px;
+	height: 100px;
+	font-size: 3em;
+	transition-property: background-color;
+	transition-duration: 1s;
+	transition-delay: 1s;
+}
+
+#sec01>div {
+	background-color: #2cf;
+	width: 200px;
+	margin-bottom: 30px;
+	border-right: 14px solid #07a;
+	padding: 5px;
+	text-align: right;
+}
+
+#sec01:hover>div {
+	transform: translate(1200px, 0);
+	transition: 3s 1s;
+}
+
+#sec01:hover>.ttf01 {
+	transition-timing-function: ease;
+}
+
+#sec01:hover>.ttf02 {
+	transition-timing-function: ease-in;
+}
+
+#sec01:hover>.ttf03 {
+	transition-timing-function: ease-out;
+}
+
+#sec01:hover>.ttf04 {
+	transition-timing-function: ease-in-out;
+}
+
+#sec01:hover>.ttf05 {
+	transition-timing-function: linear;
+}
+
+#sec01:hover>.ttf06 {
+	transition-timing-function: cubic-bezier(.41,1.24,.56,-0.36);
+}
+
+#sec01:hover>.ttf06 {
+	transition-timing-function: cubic-bezier(1,.05,0,.98);
+}

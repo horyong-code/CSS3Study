@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+<title>transition</title>
+<link href="style.css" rel="stylesheet">
+<link href="transition.css" rel="stylesheet">
+</head>
+<body>
+	<h1 class="tr">transition</h1>
+	<ul>
+		<li>transition-property: ; - 적용할 속성명</li>
+		<li>transition-duration: ; - 진행 시간 (필수)</li>
+		<li>transition-delay: ; - 지연 시간</li>
+		<li>transition-timing-function: ; - 가속 / 감속 등</li>		
+	</ul>
+	시간은 초 (s)나 밀리초 (ms) 단위를 적용
+	
+	<section id="sec01">
+		<h2>transition-timing-function: ;</h2>
+		<div class="ttf01">ease</div>
+		<div class="ttf02">ease-in</div>
+		<div class="ttf03">ease-out</div>
+		<div class="ttf04">ease-in-out</div>
+		<div class="ttf05">linear</div>
+		<!-- https://cubic-bezier.com/#.17,.67,.83,.67 -->
+		<div class="ttf06">cubic-bezier</div>
+		<div class="ttf07">cubic-bezier</div>
+	</section>
+
+</body>
+</html>

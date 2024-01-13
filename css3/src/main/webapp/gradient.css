@@ -1,0 +1,47 @@
+@charset "UTF-8";
+
+#hn2, #gr {float: left;}
+#hn2 {margin-left:3em;}
+#gr {list-style-position: inside;}
+
+#gr>li {border-radius:1.5em;
+	margin-bottom:2em;
+	padding: 4em 1em;
+	width:30em;
+	line-height: 1.8;}
+#gr>li:hover {
+ box-shadow: 0 0 20px #33d;	}
+	
+#gr>li:first-line {
+ font-size: 1.15em;
+ font-weight: bold;
+ color: #240; }
+
+
+ /* 1. linear-gradient 선형 그라데이션 */
+.ln-gr {background:
+linear-gradient(#ff0,#0ff);}
+.ln-gr:hover {background:
+linear-gradient(90deg,#ff0,#0ff);}
+
+
+ /* 2. radial-gradient 방사형 그라데이션 */
+.rd-gr {background:
+radial-gradient(#ff0,#0ff);}
+.rd-gr:hover {background:
+radial-gradient(circle,#ff0,#0ff);}
+
+
+ /* 3. conic-gradient 원뿔형 그라데이션 */
+.cn-gr {background:
+conic-gradient(#ff0,#0ff);}
+.cn-gr:hover {background:
+conic-gradient(#ff0 30deg,#0ff 140deg);}
+
+
+
+
+
+
+
+

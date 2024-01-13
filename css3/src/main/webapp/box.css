@@ -1,0 +1,26 @@
+@charset "UTF-8";
+
+#sec01>div, #sec01>p {
+border: 10px solid #007;
+width: 150px; height: 50px;
+margin: 30px;
+padding: 14px;
+}
+
+#sec01>div {
+box-sizing: border-box;
+/* border나 padding이 요소의 크기 계산에 포함 */
+}
+
+
+
+#sec02>span, #sec02>b{
+/* 그룹 선택자로 지정시 상위 요소 조건이 같아도 생략할 수 없음 */
+border: 1px solid #070;
+width: 150px; height: 50px;
+margin : 30px;
+}
+
+/*#sec02>b {display: block;}*/
+
+/*#sec02>span {display: block;}*/

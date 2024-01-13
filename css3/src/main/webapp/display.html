@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+<title>display</title>
+<link href="style.css" rel="stylesheet">
+<link href="display.css" rel="stylesheet">
+</head>
+<body>
+	<nav>
+		<ul id="mn">
+			<li><a href="#sec01">section01</a></li>
+			<li><a href="#sec02">section02</a></li>
+			<li><a href="#sec03">section03</a></li>
+			<li><a href="#sec04">section04</a></li>
+		</ul>
+	</nav>
+	<h1>display - 요소가 화면에 나타나는 방식 지정</h1>
+
+	<ul>
+		<li>display: inline; inline 성격으로 지정</li>
+		<li>display: block; block 성격으로 지정</li>
+		<li>display: inline-block; inline + block 성격으로 지정</li>
+		<li>display: none; 화면에서 사라짐</li>
+	</ul>
+	
+	<section id="sec01">
+		<h2>1. display: inline;</h2>
+		
+		<div class="bl">block - div</div>
+		<p class="bl">block - p</p>
+		<aside class="bl">block - aside</aside>
+	</section>
+	
+	<section id="sec02">
+		<h2>2. display: block;</h2>
+		
+		<span class="in">inline - span</span>
+		<a class="in">inline - a</a>
+		<b class="in">inline - b</b>
+	</section>
+	
+	<section id="sec03">
+		<h2>3. display: inline-block;</h2>
+		
+		<div>block - div</div>
+		<p>block - p</p>
+		<aside>block - aside</aside>
+		<span>inline - span</span>
+		<a>inline - a</a>
+		<b>inline - b</b>
+	</section>
+	
+	<section id="sec04">
+		<h2>4. display: none;</h2>
+		
+		<div>block - div</div>
+		<p>block - p</p>
+		<aside>block - aside</aside>
+		<span>inline - span</span>
+		<a>inline - a</a>
+		<b>inline - b</b>
+		<i>inline - i</i>
+	</section>
+	
+	<section id="sec05">
+		<h2>5. visibility: hidden;</h2>
+		
+		<div>block - div</div>
+		<p>block - p</p>
+		<aside>block - aside</aside>
+		<span>inline - span</span>
+		<a>inline - a</a>
+		<b>inline - b</b>
+		<i>inline - i</i>
+	</section>
+	
+	<div id="dv">
+		display: none;은 영역과 요소가 같이 사라짐.
+		(레이아웃의 변화 있음)
+		
+		visibility: hidden;은 영역 남기고 요소만 사라짐.
+		(레이아웃의 변화 없음)
+	</div>
+		<p id="op">
+			opacity: n; 요소의 불투명도 지정
+			0 ~ 1 사이의 값으로 변경하며 0일 때 완전 투명,
+			1일 때 불투명.
+		</p>
+	
+	<div id="top">
+	<a href="#">top</a>
+	</div>
+
+
+</body>
+</html>

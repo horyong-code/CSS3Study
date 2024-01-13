@@ -1,0 +1,74 @@
+@charset "UTF-8";
+
+#p01 {
+border: 1px solid;
+padding: 10px;
+}
+
+#p01:hover {
+padding: 0;	
+}
+
+#pdr>li {
+border: 1px solid;
+}
+
+/* 1. padding의 각 방향별 지정 속성 */
+.pt {
+padding-top: 30px;	
+}
+
+.pr {
+text-align: right;
+padding-right: 30px;
+}
+
+.pb {
+padding-bottom: 30px;
+}
+
+.pl {
+padding-left: 10%;
+}
+
+/* 2. padding의 값 갯수별 지정법 */
+#pdn>li {
+border: 1px solid;	
+}
+
+.pn4 {
+padding: 50px 80px 20px 100px;	
+}
+
+.pn3 {padding: 3em 25% 0.7em;}
+
+.pn2 {padding: 2em 20%;}
+
+.pn1 {padding: 4em;}
+
+
+#n1, #i1 {text-transform: uppercase; font-weight: bold; text-shadow: 1px 1px 2px #333;}
+
+#i1 {text-transform: uppercase;}
+
+#tt {padding: 1em;}
+
+#tt2 {padding: 0.6em 1em;}
+
+#n1, #i1 {padding-right: 0.5em;}
+
+.btn {padding: 0.5em 2em;}
+
+#ph>img {width: 400;}
+
+.ph01 {border: 26px solid; padding: 50px;}
+
+.ph02 {border: 1px solid #333;
+padding: 20px 20px 140px;
+
+box-shadow: 2px 3px 12px #333;}
+
+.ph03 {border-radius: 50%;
+padding: 40px;}
+
+.ph03:hover {border-radius: 0; transition: 1s;}

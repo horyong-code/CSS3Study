@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+<title>Insert title here</title>
+<link href="style.css" rel="stylesheet">
+<link href="position.css" rel="stylesheet">
+</head>
+<body>
+	<h1>position - 위치 지정 방식</h1>
+	<ul>
+		<li>position: static; - (기본) 소스 순서대로 정렬</li>
+		<li>position: relative; - 현 위치에서 ~ 거리 지정</li>
+		<li>position: absolute; - 상위 요소를 기준으로 ~ 거리 지정</li>
+		<li>position: fixed; - 브라우저를 기준으로 ~ 고정</li>
+		<li>position: sticky; - relative와 fixed 믹스</li>
+	</ul>
+
+	<h2>거리값 지정</h2>
+	<ul>
+		<li>수평 : left / right</li>
+		<li>수직 : top / bottom</li>
+	</ul>
+
+	<section id="sec05">
+		<h2>5. position: sticky; relative와 fixed 믹스</h2>
+		브라우저의 특정 위치에 도착하면 고정.
+		sticky를 적용할 때 다른 상위 요소가 없어야함
+		* 색상 적용 시 투명도 조절 = rgba(r,g,b,a)
+		a는 불투명도 0 ~ 1 사이의 값
+	</section>
+
+	<section id="sec01">
+		<h2>1. position: static; (기본) 소스 순서대로 정렬</h2>
+		
+		<div>position: static;</div>
+	</section>
+	
+	<section id="sec02">
+		<h2>2. position: relative; 현 위치에서 ~ 거리 지정</h2>
+		
+		<div class="re01">position: relative; left: 500px;</div>
+		<div class="re02">position: relative; right: 500px</div>
+		<div class="re03">position: relative; top: 500px;</div>
+		<div class="re04">position: relative; bottom: 500px;</div>
+		<div class="re05">position: relative; left : 900px; bottom: 300px;</div>
+		<div class="re06">position: relative; right: 500px; top: 300px;</div>
+	</section>
+
+	<section id="sec03">
+		<h2>3. position: absolute; 상위 요소를 기준으로 ~ 거리 지정
+		<i>(기준이 될 상위 요소에 position: relative; 설정)</i>	
+		</h2>
+		
+		<div class="ab01">position: absolute; left: 500px;</div>
+		<div class="ab02">position: absolute; right: 500px;</div>
+		<div class="ab03">position: absolute; top: 300px;</div>
+		<div class="ab04">position: absolute; bottom: 30px;</div>
+	<aside>
+		<div class="cd01">card-01</div>
+		<div class="cd02">card-02</div>
+		<div class="cd03">card-03</div>
+		<div class="cd04">card-04</div>
+		<p><b>z-index: n;</b><br>
+		position으로 겹친 요소들끼리의 위아래 지정<br>
+		(값이 클 수록 위로 올라옴. 음수 가능<br>
+		* html소스에서 태그 순으로 자동 1씩 증가)
+		</p>
+	</aside>
+	</section>
+	
+	<section id="sec04">
+		<nav id="quick">
+			<ul>
+			<li><a href="#sec01">position: static;</a></li>
+			<li><a href="#sec02">position: relative;</a></li>
+			<li><a href="#sec03">position: absolute;</a></li>
+			<li><a href="#">top</a></li>
+			</ul>
+		</nav>
+	</section>
+
+</body>
+</html>

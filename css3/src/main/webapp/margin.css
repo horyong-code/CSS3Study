@@ -1,0 +1,85 @@
+@charset "UTF-8";
+
+/* 1. margin의 방향 별 지정 */
+#mg {border: 1px solid;
+margin: 10px;}
+
+.mt, .mr, .mb, .ml {
+	border: 1px solid;
+}
+
+.mt {margin-top: 4em;}
+
+.mr {margin-right: 20%; text-align: right;}
+
+.mb {margin-bottom: 20px;}
+
+.ml {margin-left: 20%;}
+
+/* 2. margin의 값 개수 지정 */
+form {
+width: 500px; 
+margin: 2em auto;
+border: 1px solid blue;
+}
+
+#mgn>li {
+border: 1px solid;
+}
+
+.mgn01 {margin: 50px;}
+
+.mgn02 {margin: 20px 50px;}
+
+.mgn03 {margin: 20px 50px 30px;}
+
+.mgn04 {margin: 10px 50% 20px 5%;}
+
+#nm {margin-right: 20px;}
+
+.bs {margin-left: 1em; margin-bottom: 5em;}
+/* 줄이 바뀌지 않는 태그는 위아래 마진 X */
+
+.it {margin-right: 1em; margin-bottom: 5em;}
+
+#itw {/* border: 1px solid red; */
+margin-bottom: 3em;
+margin-left: 1.5em;
+font-size: 30px;}
+
+#nm, #id {
+width: 80px; 
+padding: 5px; 
+border: 3px solid #ccc; 
+vertical-align: middle;}
+
+#btn {
+margin: 30px auto;
+padding: 10px 50px;
+
+}
+
+#inbox {
+/*border: 1px solid red;*/
+width: 450px;
+/*margin: 0 auto;*/
+text-align: center;
+}
+
+label {
+background-color: #ccc;
+text-transform: uppercase; 
+font-weight: bold; 
+color: #333;
+font-size: 1.2em;
+width: 80px; /* 적용 불가 */
+padding: 5px 20px;
+vertical-align: middle;
+/* vertical-align : 수직 정렬 */
+border-radius: 0.3em;}
+
+#itw {
+/*border: 1px solid #f00;*/
+width: 230px;
+margin: 30px auto;}
+

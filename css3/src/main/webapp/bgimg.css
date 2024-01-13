@@ -1,0 +1,48 @@
+@charset "UTF-8";
+
+body {background-image: url("img/jpg/puppy_2.jpg"), 
+url("img/jpg/pineapple.jpg");
+background-repeat: no-repeat, repeat-x;
+/*background-size: contain;*/
+background-position: center 50px, left bottom;
+background-attachment: fixed;
+}
+
+ol {
+margin: 5em 3em;
+font-weight: bold;	
+background-color: #ccc;
+padding: 1.5em 2em;
+width: 500px;
+}
+
+ul ol {
+margin: 0 3em;
+font-weight: normal;	
+background-color: #fff;
+padding: 1.5em;
+width: 100%;	
+background-color: transparent;
+}
+
+li {font-size: 20px;
+line-height: 2;
+/* line-height: 행간; - 단위 생략 가능 */	
+}
+
+/* background-attachment */
+#sec01>p {
+border: 3px solid #d00;
+width: 30%;
+height: 400px;
+/*display: inline-block;*/
+float: left;
+background-image: url("img/jpg/puppy_3.jpg");
+background-size: cover;
+background-position: center center;
+overflow: auto;
+}
+
+.ba01 {background-attachment: scroll;}
+.ba02 {background-attachment: fixed;}
+.ba03 {background-attachment: local;}

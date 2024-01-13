@@ -1,0 +1,228 @@
+@charset "UTF-8";
+/* 모바일 퍼스트 */
+
+/*
+font-family: 'Hi Melody', sans-serif;
+font-family: 'Nanum Gothic', sans-serif;
+*/
+
+* { /* CSS 초기화 */
+	margin: 0;
+	padding: 0;
+}
+
+html {
+	scroll-behavior: smooth;
+}
+
+body {
+	font-family: 'Nanum Gothic', sans-serif;	
+}
+
+a {
+	text-decoration: none;	
+}
+
+nav a:link, nav a:visited {
+	color: #fff;
+}
+
+nav a:hover, nav a:active {
+	color: #ff0;
+}
+
+h2 {
+	font-size: 1.8em;
+	font-family: 'Hi Melody', sans-serif;
+}
+
+h3 {
+	font-size: 1.3em;
+}
+
+p {
+	font-size: 1.3em;
+	line-height: 2.5;
+}
+
+li {
+	font-size: 1em;
+	line-height: 2;
+}
+
+#wrap {
+/*	border: 1px solid red;*/
+	margin: 0 auto;
+}
+
+header {
+	height: 300px;
+	background-image: url("img/header.jpg");
+	background-size: cover;
+	background-position: center center;
+}
+
+nav {
+	background-color: #000;
+	height: 50px;
+}
+
+nav ul {
+	list-style: none;
+	padding: 10px;
+}
+
+nav li {
+/*	border: 1px solid red;*/
+	/* 메뉴 가로로 배치 */
+	display: inline-block;
+	margin: 5px 15px;
+	font-size: 0.8em;
+	font-family: ;
+}
+
+section {
+/*	border: 1px solid red;*/
+	padding: 15px 5% 10px 5%; /* 위아래 : px, 좌우 : % */
+	position: relative;
+	/* 기준이 될 상위 요소의 설정 */
+}
+
+section:nth-of-type(2n) {
+	background-color: #eee;
+}
+
+.pg-title {
+/*	border: 1px solid red;*/
+	padding: 30px 50px;
+	position: absolute;
+	/* 상위 요소를 기준으로 자리잡는 설정 */
+	top: 20px;
+	left: 0;
+	font-family: ;
+}
+
+.pg-title i {
+	font-size: 24px !important;
+	color: #520 !important;
+}
+
+.content {
+/*	border: 1px solid red;*/
+	width: 90%;
+	margin: 80px auto 10px;
+	padding: 20px;
+	box-sizing: border-box;
+	/* 요소의 크기 계산법 - 변경 (width와 height 값에 border와 padding을 포함하기) */
+}
+
+.photo {
+/*	border: 1px solid blue;*/
+	display: none;
+	/* 모바일 ~ 태블릿까지는 이미지 숨김 */
+}
+
+.text>h3 {
+	color: #0094ff;
+	margin-bottom: 20px;
+}
+
+footer {
+	background-color: black;
+	height: 100px;
+	color: white;
+}
+
+footer>p {
+	border: 1px solid blue;
+	text-align: center;
+	line-height: 100px;
+	font-family: 'Hi melody', san-serif;
+	text-transform: capitalize;
+}
+
+
+/* tablet - 768px 이상 */
+@media screen and (min-width:768px) {
+/* 장치 종류는 screen (스마트폰 + 태블릿 + PC)이면서 최소너비 768px부터 적용 */
+	header {
+		height: 400px;
+	}
+	
+	#intro, #map { 
+		border: 1px dotted #ccc;
+		float: left; /* 컨텐츠 2개를 나란히 배치 */
+		width: 50%;
+		/* 컨텐츠 2개의 너비가 50$로 지정 */
+		box-sizing: border-box;
+		height: 400px;
+	}
+	
+	#choice {
+		clear: both;
+		/* float의 영향으로 밀고 올라온 요소 제자리로 */
+	}
+}
+
+/* PC - 992px 이상 */
+@media screen and (min-width:992px) {
+/* 장치 종류는 screen (스마트폰 + 태블릿 + PC)이면서 최소너비 992px부터 적용 */
+	#wrap {
+		border: 1px solid #ccc;
+		width: 995px;
+		/* 정해진 너비로 모든 내용을 고정 */
+	}
+	
+	header {
+		height: 500px;
+	}
+	
+	section {
+		height: 420px;
+	}
+	
+	.photo {
+		display: block; /* div -> block */
+		/* 모바일 ~ 태블릿까지 숨겼던 이미지를 보임 */
+	}
+	
+	.photo>img {
+		width: 100%;
+		max-width: 320px;
+		/* 원본 이미지보다 커지지 않게 */
+		height: auto;
+	}
+	
+	#intro, #map {
+		width: 100%; /* float : 크기 복원만 해도 내려감 */
+	}
+	
+	.text {
+		border: 1px solid red;
+		margin-left: 5%;
+	}
+	
+	.photo, .text {
+		float: left;
+		/* 이미지 영역과 글자 영역을 나란히 */
+		width: 42%;
+	}
+	
+	#choice .photo, #choice .text {
+		float: right
+		/* 마지막 컨텐츠만 이미지 영역과 글자를 좌우 반대 */
+	}
+	
+	#choice .photo {
+		margin-left: 5%;
+		border-radius: 50%;
+		overflow: hidden;
+		/* 영역 밖의 내용 (이미지) 처리 - 숨김 */
+	}
+	
+	footer {
+		clear: both;
+	}
+	
+	
+}

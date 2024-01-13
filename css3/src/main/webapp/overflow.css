@@ -1,0 +1,58 @@
+@charset "UTF-8";
+
+#ov>li {
+border: 1px solid red;
+width: 45%;
+height: 250px;
+display: inline-block;
+margin: 5em 2%;
+vertical-align: top;
+}
+
+.vs {
+overflow: visible;
+}
+
+.hd {
+overflow: hidden;	
+}
+
+.sc {
+overflow: scroll;
+}
+
+.at {
+overflow: auto;
+}
+
+#ov:hover>.sc, #ov:hover>.at {
+height: 500px;
+}
+
+.hd>img {
+height: 300px;	
+opacity: 0.5;
+}
+
+.hd:hover>img {
+height:200px;
+transition: 1s;
+opacity: 1;
+}
+
+.el {
+border: 1px solid;
+width: 400px;
+height: 40px;
+padding: 0.5em;
+overflow: hidden;
+text-overflow: ellipsis;
+white-space: nowrap;
+}
+
+.el:hover {
+background-color: black;
+color: white;
+transition: 1.2s;
+width: 1200px;
+}

@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+<title>overflow</title>
+<link href="style.css" rel="stylesheet">
+<link href="overflow.css" rel="stylesheet">
+</head>
+<body>
+	<h1>overflow - 영역 밖의 내용 처리</h1>
+	<ul>
+		<li>overflow: visible; 기본 - 보임</li>
+		<li>overflow: hidden; 숨김</li>
+		<li>overflow: scroll; 스크롤바 생성</li>
+		<li>overflow: auto; 필요하면 스크롤바 생김</li>
+	</ul>
+	
+	<ol id="ov">
+		<li class="vs">overflow: visible; 기본 - 보임
+		<br><br><img src="img/jpg/pineapple.jpg">
+		</li>
+		<li class="hd">overflow: hidden; 숨김
+		<br><br><img src="img/jpg/pineapple.jpg">			
+		</li>
+		<li class="sc">overflow: scroll; 스크롤바 생성
+		<br><br><img src="img/jpg/pineapple.jpg">			
+		</li>
+		<li class="at">overflow: auto; 필요하면 스크롤바 생김
+		<br><br><img src="img/jpg/pineapple.jpg">						
+		</li>
+	</ol>
+	
+	<p class="el">
+		[말줄임표 삼총사]
+		white-space: nowrap; - 줄바꿈 금지
+		overflow: hidden; - 영역 밖의 내용 숨김
+		text-overflow: ellipsis; - 영역 밖의 글자 말 줄임표하기
+	</p>
+
+</body>
+</html>

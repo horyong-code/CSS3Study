@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+<title>CSS Basic</title>
+<link href="basic.css" rel="stylesheet">
+<style type="text/css">
+	h2 {background-color: #ccc; color: #333;}
+	
+	ul {list-style: square;}
+	
+	li {padding: 1em;}
+	
+	#in {color: #eee; background-color: #090;}
+	
+	#ex {color: #eee; background-color: #009;}
+	
+	.hw {border-left: 12px solid #46a; margin-bottom: 1.2em;}
+	
+	.cnt {text-align: center;}
+	
+	.ln-r {border-bottom: 4px solid #f00;}
+	.ln-g {border-bottom: 4px solid #0f0;}
+	.ln-b {border-bottom: 4px solid #00f;}
+	
+	.ol {color: olive;}
+	.or {color: orange;}
+	.nv {color: navy;}
+</style>
+</head>
+<body>
+	<h1 class="cnt">CSS Basic</h1>
+	<h2 class="cnt">CSS 문법</h2>
+	<p class="pre fs15 bld">
+		<span class="red">선택자</span> {
+				속성:속성값; 속성:속성값;}
+		<span id="hid">
+			span 태그는 줄이 바뀌지 않고 문자 일부를 선택할 수 있음</span>		
+	</p>
+	<h2 class="cnt">CSS 적용</h2>
+	<ul>
+		<li id="ex" class="hw">External 방식 - 외부 파일 방식. 스타일 소스가 웹 문서와 별개.<br>
+		  	head안에 &lt;link href="*.css" rel="stylesheet"&gt;  <br> 
+			통일성 있는 디자인 가능, 유지 보수 유리
+		</li>
+		<li id="in" class="hw">Internal 방식 - 내장 방식. 웹문서의 head 안에 스타일 소스가 위치.<br>
+			&lt;style type="text/css"&gt; ... &lt;/style&gt; <br>  
+			웹페이지에 종속적. 해당 문서에만 적용됨
+		</li>
+		<li style="color: #fff; background-color: #700;">Inline 방식 - 태그 뒤에 바로 스타일 소스가 위치.<br>
+			통일성 있는 디자인 불가능, 유지 보수 불리<br>
+			&lt;tag style="..."&gt;<br>
+			CSS 적용 우선 순위는 가장 높음. body만 수정 가능한 상황에서 활용
+		</li> 
+	</ul>
+	
+	<h2 class="cnt">CSS 선택자 대표 3가지</h2>
+	<ul>
+		<li class="ln-r or">tag 선택자 - tag 그대로 활용. 강제 & 자동 적용</li>
+		<li class="ln-g ol">id 선택자 - tag에 id를 추가하여 활용 (#id)
+			id가 중복 적용 불가하므로 스타일도 중복 적용 불가. 주로 구조적 용도로 쓰임.
+		</li>
+		<li class="ln-b nv">class 선택자 - tag에 class를 추가하여 활용 (.class)</li>
+			class가 중복 적용 가능하므로 스타일도 중복 적용 가능. 주로 디자인적 용도로 쓰임.
+	</ul>
+</body>
+</html>

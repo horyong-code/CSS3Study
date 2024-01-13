@@ -1,0 +1,187 @@
+@charset "UTF-8";
+/*
+	전체 선택자 *로 CSS 초기화
+	* {margin: 0; padding: 0;}
+*/
+
+/* nav */
+nav {
+/*	border: 1px solid #00f;*/
+	margin: 10px 0 10px 10px;
+}
+
+#mn {
+/*	border: 1px solid #f00;*/
+	padding-left: 0;
+}
+
+#mn>li {
+	border: 1px solid #f00;
+	display: inline-block;
+	margin-right: 20px;
+	border-radius: 10px;
+	/* 메뉴들을 가로로 배치 */
+}
+
+#mn>li>a {
+	text-decoration: none;
+	text-transform: capitalize;
+	width: 150px;
+	height: 40px;
+	font-weight: bold;
+	text-align: center;
+	display: block; /* 크기 적용 위해 바꿈 */
+	line-height: 40px; /* 행간 (줄 간격) = 높이값으로 한 줄 글자를 수직 중앙 정렬 */
+/*	padding: 10px 50px; : 내부 여백으로도 요소 크기를 키울 수 있음 */
+}
+
+#mn>li>a:link, #mn>li>a:visited {
+	/* a:link (초기 링크), a:visited (방문한 링크) : 링크의 평상 시 상태 지정 */
+	background-color: #5bf;
+	color: #333;
+	border-radius: 10px;
+}
+
+#mn>li>a:hover, #mn>li>a:active {
+	/* a:hover (마우스 오버), a:active (활성화 링크) : 링크의 확인 시 상태 지정 */
+	background-color: #333;
+	color: #3af;
+	border-radius: 10px;
+	transition: 0.5s;
+}
+
+
+/* 1. display: inline; */
+/* #sec01>div, #sec01>p, #sec01>aside { } */
+#sec01>.bl {
+	border: 1px solid #f00;
+	width: 150px;
+	display: inline;
+}
+
+/* 2. display: block; */
+#sec02>.in {
+	border: 1px solid #00f;
+	width: 200px;
+	height: 50px;
+	margin: 20px;
+	display: block;
+}
+
+/* 3. display: inline-block; */
+#sec03>*:not(h2){
+	border: 1px solid #0a0;
+	width: 200px;
+	height: 50px;
+	margin: 20px;
+	display: inline-block;
+}
+
+#sec04, #sec05 {
+	display: inline-block;
+	width: 45%;
+	vertical-align: top; /* inline 요소들끼리의 수직 정렬 */
+}
+
+/* 4. display: none; */
+#sec04>*:not(h2) {
+	border: 1px solid;
+}
+
+#sec04>p {
+	background-color: #afc;
+	height: 50px;
+	display: none;
+}
+
+#sec04>span {
+	background-color: #fce;
+	padding: 10px;
+	display: none;
+}
+
+#sec04:hover>p {
+	display: block;
+}
+
+#sec04:hover>span {
+	display: inline;
+}
+
+#sec04>b:hover {
+	background-color: #000;
+	color: #ff0;
+}
+
+#sec04>b:hover+i {
+	/* 인접형제관계선택자 A+B는 A의 바로 뒤에 오는 형제 관계인 B만 지정 */
+	/*     형제관계선택자 A~B는 A의 뒤에 오는 모든 형제 관계인 B를 지정 */
+	display: none;
+}
+
+/* 5. visibility: hidden; */
+#sec05>*:not(h2) {
+	border: 1px solid;
+}
+
+#sec05>p {
+	background-color: #acf;
+	height: 50px;
+	visibility: hidden;
+}
+
+#sec05:hover>p {
+	visibility: visible;
+}
+
+#sec05>span {
+	background-color: #aff;
+	visibility: hidden;
+}
+
+#sec05:hover>span {
+	visibility: visible;
+}
+
+#dv {
+	border: 6px double #ccf;
+	background-color: #ccc;
+	padding: 1em;
+	width: 60%;
+	margin: 2em auto;
+	white-space: pre; /* pre 태그처럼 공백을 소스 그대로 살려줌 */
+}
+
+#dv:hover {
+	opacity: 0; /* 요소 완전 투명 */
+	transition: 0.5s;
+}
+
+#top {
+	background-color: #000;
+	text-transform: uppercase;
+	width: 50px;
+	height: 50px;
+	text-align: center;
+	line-height: 50px;
+	margin: auto;
+	border-radius: 50%;
+}
+
+#top>a {
+	text-decoration: none;
+	font-weight: bold;
+}
+
+#top>a:link, #top>a:visited {
+	color: #fff;
+}
+
+#top>a:hover, #top>a:active {
+	color: #ff0;
+}
+
+#top:hover {
+	background-color: #0ac;
+	transition: 0.5s; 
+}
